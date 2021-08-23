@@ -1,0 +1,634 @@
+
+
+<!-- pf_header_start -->
+
+<html>
+  <head>
+    <META NAME="keywords" CONTENT="cores, VHDL, Verilog HDL, ASIC, Synthesizable,
+      standard cell, IP, Intellectual Property, 32-bit RISC, UART, PCI, SDRAM,
+      full custom, system on a chip, SOC, reusable, design, development, synthesis,
+      designs, developers, C, Linux, eCos, open, free, open source cores, RTL code,
+      system-on-a-chip, circuits, digital, GNU, GPL, core, controller, processor,
+      system design, chip design, EDA, design methodology, design tools, ASICs, programmable logic,
+      FPGA's, PLDs, CPLDs, verification, Synthesis, HDL, Simulation, IC design software,
+      semiconductor design, integrated circuits, system designs, chip designs, EDAs, 
+      design methodologies, design tool, ASIC, programmable logics, FPGA, PLD, CPLD, Synthesis, 
+      circuit, Synopsys, system design, chip design, programmable logic, FPGA's, PLDs, 
+      CPLDs, verification, Simulation">
+    <META NAME="description" CONTENT="OPENCORES.ORG endorses development and hosts
+      a repository of free, open-source cores (chip designs) and supplemental
+      platforms (boards).">
+    <STYLE type=text/css>
+      BODY {margin: 0;}
+      BODY, P, DIV, TD, TR, TH, FORM, OL, UL, LI, B, I, INPUT, TEXTAREA, SELECT,
+      FONT {font-size: 10pt; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+
+      P, TD, FORM, TEXTAREA {font-size: 10pt;}
+
+      H1, H2 {FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica; font-size: 13pt; text-decoration: none}
+
+      .noline {text-decoration: none;}
+
+      .menu_top {text-decoration: none; font-weight: bold;
+        font-size: 7pt; color: #000000; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;} 
+      .menu_section {text-decoration: none; font-weight: bold;
+        font-size: 10pt; color: #ffffff; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;} 
+      .menu_item {font-size: 10pt; color: #004488; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+      .menu_section_admin {text-decoration: none; font-weight: bold;
+        font-size: 10pt; color: #ffff44; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;} 
+      .page_title {text-decoration: none; font-weight: bold; color: #c00000; font-size: 13pt; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+      .block_title {text-decoration: none; font-weight: bold; font-size: 11pt; color: #000000; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+      .block_subtitle {text-decoration: none; font-weight: bold; font-size: 10pt; color: #000000; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+      .title {text-decoration: none; font-weight: bold; font-size: 10pt; color: #000000; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+
+      .large {font-size: 13pt; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+      .medium {font-size: 10pt; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+      .small {font-size: 7pt; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+      .ultrasmall {font-size: 3pt; FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;}
+
+      .button { font-family:Verdana, Tahoma, Arial, Helvetica; }
+
+    </STYLE>
+
+    <title>OPENCORES.ORG</title>
+
+    <script laguage="Javascript">
+      function check(msg) {
+        if(confirm(msg)) {
+          return true
+        } else {
+          return false
+        }
+      }
+    </script>
+
+  </head>
+
+  
+
+  <body 
+    bgcolor="#e0e0e0" 
+    topmargin="0" 
+    leftmargin="0" 
+    marginwidth="0" 
+    marginheight="0" 
+    link="#004488" 
+    alink="#ff3300"
+    vlink="#444444"
+  >
+
+<a name="top">
+<!-- pf_header_end -->
+<center>
+<table cellpadding=0 cellspacing=0 border=0 width=96%><tr>
+<td width=1 bgcolor=#000000><img width=1 src="/images/dotty.gif"></td>
+
+<td>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+
+<tr><td background="/images/topbg.gif" bgcolor=#aaddff height=70>
+
+<table width=100% border=0><tr><td width=120>
+<a href="/"><img border=0 src="/images/oc_logo.gif"></a>
+</td><td>
+<center>
+
+<a title="" href="/banner.cgi/redirect/1"><img width=468 height=60 border=0 alt="" src="/banner.cgi/show/1/3fc90389ca727a231660432e833bbf88"></a>
+
+</center>
+</td>
+<td width=120>
+
+
+
+
+  <form action="/pf.cgi" method=post>
+  <input type=hidden name=url value="/cvsweb.shtml/MiniUART/">
+  <input border=0 type=image src="/images/pfriendly.gif">
+  </form>
+
+
+</td>
+</tr></table>
+
+</td></tr>
+<tr bgcolor=#000000><td><img height=1 src="/images/dotty.gif"></td></tr>
+<tr><td bgcolor=#ffffff>
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%><tr>
+
+<td bgcolor=#ffee88 width=60% background="/images/menu1.gif"></td>
+<td bgcolor=#ffee88 width=15 background="/images/menu1.gif" align=right><img src="/images/exp1.gif"></td>
+<td bgcolor=#ffffff align=right nowrap>
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<font class=menu_top size=-1>
+        
+          <a class=menu_top href="/login.cgi/login">LOGIN</a>
+          
+            &nbsp; ::: &nbsp;
+          
+        
+          <a class=menu_top href="/recover_pass.cgi/recover_pass">RECOVER PASS</a>
+          
+            &nbsp; ::: &nbsp;
+          
+        
+          <a class=menu_top href="/get_account.cgi/get_account">GET ACCOUNT</a>
+          
+        
+
+&nbsp; &nbsp;
+</font>
+
+</td></tr>
+<tr bgcolor=#ffffff>
+  <td></td>
+  <td></td>
+  <td bgcolor=#000000><img src="/images/dotty.gif"></td>
+</tr>
+
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=10><img width=10 src="/images/dotty.gif"></td>
+
+<td width=120 valign=top>
+        
+        <table width=100% border=0 cellpadding=2 cellspacing=0>
+          <tr><td><img height=2 src="/images/dotty.gif"></td></tr>
+        
+         <tr><td bgcolor="#347FB8">
+           <img src="/images/bullet.gif">
+         
+           <font class=menu_section>Browse</font>
+         
+         </td></tr>
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/browse.cgi/by_category"><font class=menu_item>Projects</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/cvsweb.shtml/"><font class=menu_item>CVS</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/forums.cgi"><font class=menu_item>Forums</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/news.cgi/list/1"><font class=menu_item>News</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/articles.cgi/list"><font class=menu_item>Articles</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/polls.cgi/list"><font class=menu_item>Polls</font></a></li>
+           </td></tr>
+            
+          
+          <tr><td><font size=-2>&nbsp;</font></td></tr>
+        
+         <tr><td bgcolor="#347FB8">
+           <img src="/images/bullet.gif">
+         
+           <font class=menu_section>Opencores</font>
+         
+         </td></tr>
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/faq.cgi/index"><font class=menu_item>FAQ</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opencores/cvs_howto"><font class=menu_item>CVS HowTo</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opencores/mission"><font class=menu_item>Mission</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opencores/media"><font class=menu_item>Media</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opencores/tools"><font class=menu_item>Tools</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opencores/sponsors"><font class=menu_item>Sponsors</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opencores/mirrors"><font class=menu_item>Mirrors</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opencores/logos"><font class=menu_item>Logos</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opencores/contacts"><font class=menu_item>Contact us</font></a></li>
+           </td></tr>
+            
+          
+          <tr><td><font size=-2>&nbsp;</font></td></tr>
+        
+         <tr><td bgcolor="#347FB8">
+           <img src="/images/bullet.gif">
+         
+           <font class=menu_section>Tools</font>
+         
+         </td></tr>
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/search.shtml"><font class=menu_item>Search</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/cvsget.shtml"><font class=menu_item>CVSGet</font></a></li>
+           </td></tr>
+            
+          
+          <tr><td><font size=-2>&nbsp;</font></td></tr>
+        
+         <tr><td bgcolor="#347FB8">
+           <img src="/images/bullet.gif">
+         
+           <font class=menu_section>More</font>
+         
+         </td></tr>
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/wishbone/"><font class=menu_item>Wishbone</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/perlilog/"><font class=menu_item>Perlilog</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/edatools/"><font class=menu_item>EDA tools</font></a></li>
+           </td></tr>
+            
+          
+           <tr><td>
+              
+                  
+                      <li class=small>
+                  
+              
+            <a class=menu_item href="/projects.cgi/web/opentech/"><font class=menu_item>OpenTech CD</font></a></li>
+           </td></tr>
+            
+          
+          <tr><td><font size=-2>&nbsp;</font></td></tr>
+        
+        </table>
+
+
+
+</td>
+<td width=10><img width=10 src="/images/dotty.gif"></td>
+<td background="/images/vpd.gif"><img width=1 src="/images/dotty.gif"></td>
+<td width=10><img width=10 src="/images/dotty.gif"></td>
+<td valign=top>
+
+
+        
+        <table width=100% cellpadding=2 cellspacing=0 border=0>
+          <tr><td><img height=2 src="/images/dotty.gif"></td></tr>
+        </table>
+        
+
+
+<table width=100% cellspacing=0 cellpadding=0 border=0><tr><td>
+
+<!-- pf_body_start -->
+
+
+
+
+
+
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>MiniUART/</title>
+<meta name="robots" content="nofollow" />
+<meta name="generator" content="FreeBSD-CVSweb 3.0.5" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" type="text/css" href="/css/cvsweb.css" />
+</head>
+<body>
+ <h1>MiniUART/</h1>
+<p>
+Click on a directory to enter that directory. Click on a file to display
+its revision history and to get a chance to display diffs between revisions.
+</p>
+<p><a name="dirlist"></a></p>
+<p>Current directory: <b> <a href="/cvsweb.shtml/#dirlist">[Official OpenCores CVS Repository]</a> / MiniUART</b></p>
+<hr />
+<table class="dir" width="100%" cellspacing="0" cellpadding="2" summary="Directory index of MiniUART/">
+<tr>
+<th colspan="2" class="sorted">File</th>
+</tr>
+<tr class="odd">
+<td class="dir" colspan="2"><a href="../"><img src="/icons/back.gif" alt="[BACK]" border="0" width="20" height="22" /></a>&nbsp;<a href="../">Parent Directory</a></td>
+</tr>
+
+<tr class="even">
+<td class="dir" colspan="2"><a name="doc"></a><a href="./doc/"><img src="/icons/dir.gif" alt="[DIR]" border="0" width="20" height="22" /></a>&nbsp;<a href="./doc/">doc/</a></td>
+</tr>
+
+<tr class="odd">
+<td class="dir" colspan="2"><a name="impl"></a><a href="./impl/"><img src="/icons/dir.gif" alt="[DIR]" border="0" width="20" height="22" /></a>&nbsp;<a href="./impl/">impl/</a></td>
+</tr>
+
+<tr class="even">
+<td class="dir" colspan="2"><a name="rtl"></a><a href="./rtl/"><img src="/icons/dir.gif" alt="[DIR]" border="0" width="20" height="22" /></a>&nbsp;<a href="./rtl/">rtl/</a></td>
+</tr>
+
+<tr class="odd">
+<td class="dir" colspan="2"><a name="sim"></a><a href="./sim/"><img src="/icons/dir.gif" alt="[DIR]" border="0" width="20" height="22" /></a>&nbsp;<a href="./sim/">sim/</a></td>
+</tr>
+
+<tr class="even">
+<td class="dir" colspan="2"><a name="sw"></a><a href="./sw/"><img src="/icons/dir.gif" alt="[DIR]" border="0" width="20" height="22" /></a>&nbsp;<a href="./sw/">sw/</a></td>
+</tr>
+
+<tr class="odd">
+<td class="dir" colspan="2"><a name="syn"></a><a href="./syn/"><img src="/icons/dir.gif" alt="[DIR]" border="0" width="20" height="22" /></a>&nbsp;<a href="./syn/">syn/</a></td>
+</tr>
+
+</table>
+<hr />
+<form method="get" action="./">
+<fieldset>
+<legend>General options</legend>
+<input type="hidden" name="copt" value="1" />
+<input type="hidden" name="hidecvsroot" value="0" />
+<input type="hidden" name="hidenonreadable" value="1" />
+<table summary="General options">
+<tr>
+<td class="opt-label">
+<label for="sortby" accesskey="F">Sort files by:</label>
+</td>
+<td class="opt-value">
+<select id="sortby" name="sortby">
+<option value="">File</option>
+<option value="date">Age</option>
+<option value="author">Author</option>
+<option value="rev">Revision</option>
+<option value="log">Log message</option>
+</select>,
+<label for="ignorecase" accesskey="I">case-insensitive:
+<input id="ignorecase" name="ignorecase" type="checkbox" value="1" /></label>
+</td>
+<td class="opt-label">
+<label for="hideattic" accesskey="A">Hide files in Attic:</label>
+</td>
+<td class="opt-value">
+<input id="hideattic" name="hideattic" type="checkbox" checked="checked" value="1" /></td>
+</tr>
+<tr>
+<td class="opt-label">
+<label for="logsort" accesskey="L">Sort log by:</label>
+</td>
+<td class="opt-value">
+<select id="logsort" name="logsort">
+<option value="cvs">Not sorted</option>
+<option value="date" selected="selected">Commit date</option>
+<option value="rev">Revision</option>
+</select></td>
+<td class="opt-label">
+<label for="ln" accesskey="N">Show line numbers:</label>
+</td>
+<td class="opt-value">
+<input id="ln" name="ln" type="checkbox" value="1" />
+</td>
+</tr>
+<tr>
+<td class="opt-label">
+<label for="f" accesskey="D">Diff format:</label>
+</td>
+<td>
+<select id="f" name="f">
+<option value="h" selected="selected">Colored</option>
+<option value="H">Long colored</option>
+<option value="u">Unified</option>
+<option value="c">Context</option>
+<option value="s">Side by side</option>
+</select></td>
+<td colspan="2" class="opt-label">
+<input type="submit" value="Change Options" accesskey="C" />
+</td>
+</tr>
+</table>
+</fieldset>
+</form>
+<hr />
+<address><span style="font-size: smaller">FreeBSD-CVSweb &lt;<a href="mailto:freebsd-cvsweb@FreeBSD.org">freebsd-cvsweb@FreeBSD.org</a>&gt;</span></address>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- pf_body_end -->
+
+</td>
+<td><img width=15 src="/images/dotty.gif"></td>
+</tr></table>
+
+<img border=0 src="/images/dotty.gif" height=1 width=400>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+<img border=0 src="/images/dotty.gif" height=1 width=30>
+
+</td></tr>
+</table>
+
+&nbsp;
+
+</td></tr>
+
+<tr bgcolor=#000000><td><img height=1 src="/images/dotty.gif"></td></tr>
+</table>
+
+<table background="/images/topbg.gif" width=100% cellpadding=0 cellspacing=0 border=0 bgcolor=#aaddff>
+<tr><td align=right>
+Copyright (c) 1999-2004 OPENCORES.ORG. All rights reserved. &nbsp;
+</td></tr>
+<tr><td>
+&nbsp;
+</td></tr>
+</table>
+
+</td>
+<td width=1 bgcolor=#000000><img width=1 src="/images/dotty.gif"></td>
+<td width=1 bgcolor=#f0f0c8><img width=1 src="/images/dotty.gif"></td>
+</tr></table>
+</center>
+
+<!-- pf_footer_start -->
+
+  </body>
+</html>
+
+<!-- pf_footer_end -->
+
+
+

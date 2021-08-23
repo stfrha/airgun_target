@@ -1,0 +1,262 @@
+SECTION Default
+LIST BlockViewMap
+VALUE "AIRGUN_TARGET_TB,design_definition\hdl\vhdl\airgun_target_tb.vhd,testbench,0"
+VALUE "SERIAL_CMD,design_definition\hdl\vhdl\serial_cmd.vhd,rtl,0"
+VALUE "WDT_KILLER,design_definition\hdl\vhdl\wdt_killer.vhd,rtl,0"
+VALUE "COUNTER,design_definition\hdl\vhdl\utils.vhd,Behaviour,0"
+VALUE "SYNCHRONISER,design_definition\hdl\vhdl\utils.vhd,Behaviour,0"
+VALUE "AIRGUN_TARGET,design_definition\hdl\vhdl\airgun_target.vhd,struct,0"
+VALUE "SHOT_MEASURE,design_definition\hdl\vhdl\shot_measure.vhd,rtl,0"
+VALUE "TXUNIT,design_definition\hdl\vhdl\Txunit.vhd,Behaviour,0"
+VALUE "RXUNIT,design_definition\hdl\vhdl\Rxunit.vhd,Behaviour,0"
+VALUE "TRANSMIT_SEQUENSER,design_definition\hdl\vhdl\transmit_sequencer.vhd,rtl,0"
+VALUE "AIRGUN_TARGET_CCU,design_definition\hdl\vhdl\airgun_target_ccu.vhd,behav,0"
+ENDLIST
+LIST Types
+VALUE "FPGA(*.fpk)"
+VALUE "All(*.*)"
+VALUE "Verilog(*.v)"
+VALUE "VHDL(*.vhd)"
+VALUE "BlockSymbols(*.blk)"
+VALUE "TruthTables(*.tbl)"
+VALUE "FlowCharts(*.sfc)"
+VALUE "StateDiagrams(*.sdg)"
+VALUE "Schematics(*.sbk)"
+ENDLIST
+LIST FPGA(*.fpk)
+ENDLIST
+LIST All(*.*)
+ENDLIST
+LIST Verilog(*.v)
+ENDLIST
+LIST VHDL(*.vhd)
+VALUE "design_definition\hdl\vhdl\airgun_package.vhd"
+VALUE "design_definition\hdl\vhdl\airgun_target.vhd"
+VALUE "design_definition\hdl\vhdl\shot_measure.vhd"
+VALUE "design_definition\hdl\vhdl\transmit_sequencer.vhd"
+VALUE "design_definition\hdl\vhdl\airgun_target_tb.vhd"
+VALUE "design_definition\hdl\vhdl\Rxunit.vhd"
+VALUE "design_definition\hdl\vhdl\Txunit.vhd"
+VALUE "design_definition\hdl\vhdl\utils.vhd"
+VALUE "design_definition\hdl\vhdl\serial_cmd.vhd"
+VALUE "design_definition\hdl\vhdl\airgun_target_ccu.vhd"
+VALUE "design_definition\hdl\vhdl\wdt_killer.vhd"
+ENDLIST
+LIST BlockSymbols(*.blk)
+ENDLIST
+LIST TruthTables(*.tbl)
+ENDLIST
+LIST FlowCharts(*.sfc)
+ENDLIST
+LIST StateDiagrams(*.sdg)
+ENDLIST
+LIST Schematics(*.sbk)
+ENDLIST
+LIST VerilogStimMap
+ENDLIST
+LIST VhdlStimMap
+VALUE "AIRGUN_TARGET_CCU|AIRGUN_TARGET_1,design_definition\stimulus\user\vhdl\airgun_target_tb.vhd"
+ENDLIST
+LIST AuxVhdlFiles
+VALUE "2,C:\User\frha\AirgunTarget\FW\AirgunTarget\design_definition\hdl\vhdl\airgun_package.vhd"
+ENDLIST
+LIST AuxVerilogFiles
+ENDLIST
+KEY HDLTechnology "VHDL93"
+KEY VendorTechnology "XilinxM1 Virtex-II Technology"
+KEY ConfigDir ".\Default"
+KEY SimulationType "VHDL"
+KEY VhdlFlavor "VHDL93"
+KEY Vendor "XilinxM1"
+KEY CDBDir ".\default\default.cdb"
+KEY VendorPath "C:\Mentor\WG2002\vbdesvw\XilinxM1\Virtex2\vendor.dke"
+KEY ActiveRoot "airgun_target_ccu"
+KEY ConfigType "CHIP"
+KEY DisplayInstanceNames "0"
+KEY SchematicOnlyFlag "Off"
+ENDSECTION
+SECTION ACEPlusProjectFiles
+LIST Types
+VALUE "Schematics(*.sbk)"
+VALUE "StateDiagrams(*.sdg)"
+VALUE "FlowCharts(*.sfc)"
+VALUE "TruthTables(*.tbl)"
+VALUE "HDL(*.v*)"
+VALUE "All(*.*)"
+ENDLIST
+LIST Schematics(*.sbk)
+ENDLIST
+LIST StateDiagrams(*.sdg)
+ENDLIST
+LIST FlowCharts(*.sfc)
+ENDLIST
+LIST TruthTables(*.tbl)
+ENDLIST
+LIST HDL(*.v*)
+ENDLIST
+LIST All(*.*)
+ENDLIST
+ENDSECTION
+SECTION ACEPlusFilePaths
+LIST Names
+VALUE "BOM_Configuration"
+VALUE "Border_Data"
+VALUE "Bus_Contents"
+VALUE "CDB_Discard"
+VALUE "EDIF_Configuration"
+VALUE "Fonts"
+VALUE "Global_Signals"
+VALUE "HDL_String_Map"
+VALUE "HPGL_Plot_Configuration"
+VALUE "HPGL2_Plot_Configuration"
+VALUE "Pin_Types"
+VALUE "PostScript_Plot_Configuration"
+VALUE "Project_Options"
+VALUE "CrossRef_Configuration"
+VALUE "Text_Properties"
+VALUE "Verification_Rules"
+VALUE "VerilogConfig"
+VALUE "VHDLConfig"
+VALUE "Windows_Plot_Configuration"
+ENDLIST
+LIST Fonts
+VALUE "${VBEST14PATH}\config\vbdc\vbdc.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\engineer.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\fancy.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt0.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt1.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt7.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt23.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt26.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt41.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt42.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt50.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt126.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt127.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\sdedbg.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\sbkdbg.fnt"
+ENDLIST
+LIST Text_Properties
+VALUE "${VBEST14PATH}\config\vbdc\vbdc.prp"
+ENDLIST
+LIST VerilogConfig
+ENDLIST
+LIST VHDLConfig
+ENDLIST
+LIST HDL_String_Map
+ENDLIST
+KEY Pin_Types "${VBEST14PATH}\config\vbdc\pintypes.asc"
+KEY Project_Options "${VBEST14PATH}\config\vbdc\vbdcsys.asc"
+KEY CrossRef_Configuration "${VBEST14PATH}\config\vbdc\crossref.asc"
+KEY CDB_Discard "${VBEST14PATH}\config\vbdc\discard.asc"
+KEY Verification_Rules "${VBEST14PATH}\config\vbdc\vbdcver.asc"
+KEY PostScript_Plot_Configuration "${VBEST14PATH}\config\vbdc\dctops.pcf"
+KEY HPGL_Plot_Configuration "${VBEST14PATH}\config\vbdc\dctohpgl.pcf"
+KEY HPGL2_Plot_Configuration "${VBEST14PATH}\config\vbdc\dc2hpgl2.pcf"
+KEY Windows_Plot_Configuration "${VBEST14PATH}\config\vbdc\dctowin.pcf"
+KEY BOM_Configuration "${VBEST14PATH}\config\vbdc\cdb2bom.asc"
+KEY EDIF_Configuration "${VBEST14PATH}\config\edif\edifcnfg.asc"
+KEY Global_Signals "${VBEST14PATH}\config\vbdc\global"
+KEY Bus_Contents ".\conts.asc"
+KEY Border_Data ".\BorderData.asc"
+ENDSECTION
+SECTION IngrElecDesignInfo
+KEY SBKDir "design_definition\graphics"
+KEY UDBDir ".\udb"
+KEY CDBDir ".\default\default.cdb"
+KEY ACEPlusHDLDir "design_definition\hdl\vhdl"
+KEY ACEPlusGeneratedHDLDir "Default\genhdl\vhdl"
+KEY ACEPlusDesignRootName "design_definition\hdl\vhdl\airgun_target_ccu.vhd"
+KEY ASICToolkit ""
+KEY AvoidInstance "0"
+ENDSECTION
+SECTION IngrElecLibraries
+LIST Names
+VALUE "Symbols"
+VALUE "PDBs"
+VALUE "2dCellLibraries"
+VALUE "VerilogSimulationLibraries"
+VALUE "VHDLSimulationLibraries"
+ENDLIST
+LIST VerilogSimulationLibraries
+ENDLIST
+LIST VHDLSimulationLibraries
+VALUE "IEEE"
+ENDLIST
+LIST SignalIntegrityLibrary
+ENDLIST
+LIST 2dCellLibraries
+ENDLIST
+LIST 3dCellLibraries
+ENDLIST
+LIST Symbols
+VALUE "${VBEST14PATH}\libelec\symlib\border.slb"
+VALUE "${VBEST14PATH}\libelec\symlib\kitbasic.slb"
+VALUE "${VBEST14PATH}\libelec\symlib\fchart.slb"
+VALUE "${VBEST14PATH}\libelec\symlib\connector.slb"
+ENDLIST
+LIST PDBs
+ENDLIST
+LIST IbisModelIndexes
+ENDLIST
+KEY SearchPathScheme ""
+ENDSECTION
+SECTION IEEE
+LIST Packages
+VALUE "std_logic_1164"
+VALUE "std_logic_arith"
+ENDLIST
+KEY Path ""
+KEY USEALL "0"
+ENDSECTION
+SECTION VBPCBIndicators
+KEY SchematicDesignStatus "0"
+KEY VBPCBForwardAnno "0"
+KEY SchematicDesignBackAnno "0"
+KEY CADBackAnno "0"
+KEY FLATNETNAMEs "1"
+KEY UpdateJobPrefsDB "Sync"
+KEY UpdateNetClassDB "Sync"
+KEY UpdateNetPropsDB "Sync"
+ENDSECTION
+SECTION VBPCBDesignData
+KEY NetClassFile ""
+ENDSECTION
+SECTION ConfigurationInfo
+LIST Configurations
+VALUE "Default"
+ENDLIST
+KEY ActiveConfiguration "Default"
+ENDSECTION
+SECTION Versions
+KEY ProjectVersion "WG2002"
+KEY VBDesignView "16.2.0.67"
+KEY VBDC ""
+KEY VBGHLD ""
+KEY VBHDLWriter "5.0.4.5040"
+KEY XILINXM1 " 16.2.0.10"
+KEY Actel " 16.2.0.5"
+KEY Altera " 16.2.0.6"
+KEY Orca " 16.2.0.1"
+KEY Lattice " 16.2.0.1"
+ENDSECTION
+SECTION VHDLIntegration
+LIST VHDLFiles
+ENDLIST
+LIST USERSTIMLIST
+VALUE "design_definition\stimulus\user\vhdl\airgun_target_tb.vhd | airgun_target_tb | airgun_target | User Stimulus | airgun_target_1 | testbench"
+ENDLIST
+LIST STIMLIST
+ENDLIST
+ENDSECTION
+SECTION VERILOGIntegration
+LIST VERILOGFiles
+ENDLIST
+LIST USERSTIMLIST
+ENDLIST
+LIST STIMLIST
+ENDLIST
+ENDSECTION
+SECTION IngrElecTechnologyInfo
+KEY DesignKit "C:\Mentor\WG2002\vbdesvw\XilinxM1\Virtex2\"
+ENDSECTION

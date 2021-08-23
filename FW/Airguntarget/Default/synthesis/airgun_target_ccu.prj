@@ -1,0 +1,62 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.4
+#-- Project file C:\User\frha\AirgunTarget\FW\AirgunTarget\Default\synthesis\airgun_target_ccu.prj
+#-- Written on Wed Apr 05 08:59:38 2006
+
+
+#add_file options
+add_file -vhdl -lib work "$LIB/xilinx/virtex2.vhd"
+add_file -vhdl -lib UNISIM "C:/Xilinx/vhdl/src/unisims/unisim_VCOMP.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/airgun_package.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/wdt_killer.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/serial_cmd.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/Rxunit.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/utils.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/Txunit.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/transmit_sequencer.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/shot_measure.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/airgun_target.vhd"
+add_file -vhdl -lib work "C:/User/frha/AirgunTarget/FW/AirgunTarget/design_definition/hdl/vhdl/airgun_target_ccu.vhd"
+
+
+#implementation: "XilinxM1"
+impl -add XilinxM1 -type fpga
+
+#device options
+set_option -technology VIRTEX2
+set_option -part XC2V1000
+set_option -package BG575
+set_option -speed_grade -4
+
+#compilation/mapping options
+set_option -default_enum_encoding default
+set_option -symbolic_fsm_compiler 1
+set_option -resource_sharing 1
+set_option -use_fsm_explorer 0
+
+#map options
+set_option -frequency 41.000
+set_option -run_prop_extract 0
+set_option -fanout_limit 10000
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -update_models_cp 0
+set_option -verification_mode 0
+set_option -modular 0
+set_option -retiming 0
+set_option -no_sequential_opt 0
+set_option -fixgatedclocks 0
+
+#simulation options
+set_option -write_verilog 0
+set_option -write_vhdl 1
+
+#VIF options
+set_option -write_vif 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "../place_and_route/XilinxM1/airgun_target_ccu.edf"
+impl -active "XilinxM1"

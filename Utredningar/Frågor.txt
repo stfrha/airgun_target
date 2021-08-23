@@ -1,0 +1,1 @@
+1. Varför slänger det på den kanal som inte har puls i sig för tillfället när den andra har en puls i sig. Överhörning? Antagligen ett elektriskt fenomen.

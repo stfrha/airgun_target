@@ -1,0 +1,10 @@
+Pistol:
+Diameter på bullseye: 11.5mm
+Riktprick: Ring 7 = 59.5mm
+Ringbredd: 8mm
+
+Gevär:
+Diameter på bullseye: 0.5mm
+Riktprick: Ring 4 = 30.5mm
+Ring 1: 45.5mm
+Ringbredd: 2.5mm
